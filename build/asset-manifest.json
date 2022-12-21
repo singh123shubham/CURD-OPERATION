@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/curd/static/css/main.1e492795.css",
+    "main.js": "/curd/static/js/main.216f728b.js",
+    "index.html": "/curd/index.html",
+    "main.1e492795.css.map": "/curd/static/css/main.1e492795.css.map",
+    "main.216f728b.js.map": "/curd/static/js/main.216f728b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e492795.css",
+    "static/js/main.216f728b.js"
+  ]
+}
