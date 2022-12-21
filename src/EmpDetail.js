@@ -35,6 +35,11 @@ const EmpDetail = () => {
                         <h3>Contact Details</h3>
                         <h5>Email is : {empdata.email}</h5>
                         <h5>Phone is : {empdata.phone}</h5>
+                        <h5>Phone is : {empdata.course}</h5>
+                        
+                        <h5>Phone is : {empdata.gender}</h5>
+                        <h5>Phone is : {empdata.designation}</h5>
+
                         <Link className="btn btn-danger" to="/">Back to Listing</Link>
                     </div>
                 }

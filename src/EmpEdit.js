@@ -14,6 +14,9 @@ const EmpEdit = () => {
             namechange(resp.name);
             emailchange(resp.email);
             phonechange(resp.phone);
+            genderchange(resp.gender)
+            coursechange(resp.course)
+            designationchange(resp.designation)
             activechange(resp.isactive);
         }).catch((err) => {
             console.log(err.message);
@@ -24,6 +27,9 @@ const EmpEdit = () => {
     const[name,namechange]=useState("");
     const[email,emailchange]=useState("");
     const[phone,phonechange]=useState("");
+    const[gender,genderchange]=useState('')
+    const[course,coursechange]=useState("")
+    const[designation,designationchange]=useState("")
     const[active,activechange]=useState(true);
     const[validation,valchange]=useState(false);
 
@@ -32,7 +38,7 @@ const EmpEdit = () => {
 
     const handlesubmit=(e)=>{
       e.preventDefault();
-      const empdata={id,name,email,phone,active};
+      const empdata={id,name,email,phone,gender,course,designation,active};
       
 
       fetch("http://localhost:3000/employee/"+empid,{
@@ -88,6 +94,27 @@ const EmpEdit = () => {
                                     <div className="form-group">
                                         <label>Phone</label>
                                         <input value={phone} onChange={e=>phonechange(e.target.value)} className="form-control"></input>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <div className="form-group">
+                                        <label>Gender</label>
+                                        <input value={gender} onChange={e=>genderchange(e.target.value)} className="form-control"></input>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <div className="form-group">
+                                        <label>Course</label>
+                                        <input value={course} onChange={e=>coursechange(e.target.value)} className="form-control"></input>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <div className="form-group">
+                                        <label>Designation</label>
+                                        <input value={designation} onChange={e=>designationchange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
 

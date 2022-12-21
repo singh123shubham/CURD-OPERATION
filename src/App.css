@@ -7,10 +7,42 @@
   pointer-events: none;
 }
 .btn{
-  margin: 2px;;
+  margin: 2px;
+  width: 100px;
 }
 .divbtn{
   float: left;
+}
+.form-control{
+  width: 50%;
+}
+.box{
+  height: 50vh;
+  width: 50vw;
+  border:1px solid black;
+  margin-left: 25%;
+  
+  
+}
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 1px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #0bdb16;
+  color: white;
+  padding: 5px 2px;
+  margin: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 10%;
+}
+.container {
+  padding: 16px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
